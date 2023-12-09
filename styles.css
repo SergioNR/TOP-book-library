@@ -1,0 +1,107 @@
+:root {
+    --white: #F7F1F0;
+    --cream: #E9C1AF;
+    --blue: #1F3E59;
+    --dark-blue: #1A3246;
+    --green: #478647;
+    --dark-green: #337433;
+    --red: #D05050;
+    --dark-red: #BE3E3E;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.header {
+    text-align: center;
+    min-height: 100px;
+    border-bottom: var(--dark-blue) 2px solid;
+}
+
+
+.left-side {
+    background-color: var(--cream);
+    color: var(--blue);
+    height: 100vh;
+}
+
+.logoContainer {
+    margin-left: 24px;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+}
+
+
+.newBookForm {
+    margin-top: 24px;
+    padding: 0px 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    ;
+}
+
+label {
+    color: var(--blue);
+    font-size: 24px;
+}
+
+input {
+    border: none;
+    border-bottom: var(--dark-blue) 2px dashed;
+    font-size: 24px;
+    padding: 4px;
+    background-color: var(--cream);
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type=checkbox] {
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 24px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.right-side {
+    background-color: var(--white);
+    margin-top: 0px;
+}
+
+.libraryContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bookCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px;
+    margin: 16px;
+    border: var(--dark-blue) 2px solid;
+    border-radius: 4px;
+    background-color: var(--cream);
+    min-height: 100px;
+}

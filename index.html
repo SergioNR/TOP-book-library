@@ -1,46 +1,67 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="styles.css">
 
-    <script defer src="./main.js"></script>
+
+    <script defer src="main.js"></script>
+
 </head>
+
 <body>
+    <main>
 
-    <div class="container">
-        <button class="btnEjemplo">click me</button>
-        <button class="btnEjemplo1">click me1</button>
-        <div class="griditem">grid item 1</div>
-        <div class="griditem">grid item 2</div>
-        <div class="griditem">grid item 3</div>
-        <div class="griditem">grid item 4</div>
-        <div class="griditem">grid item 5</div>
-        <div class="griditem">grid item 6</div>
-    </div>
+        <div class="left-side">
 
-    <form action="" class="newBookForm">
-        <label for="title">Title</label>
-        <input type="text" name="title" id="title">
-        
-        <label for="author">Author</label>
-        <input type="text" name="author" id="author">
-        
-        <label for="numberOfPages">Pages</label>
-        <input type="number" name="numberOfPages" id="numberOfPages">
-        
-        <label for="hasBeenRead">Read</label>
-        <input type="checkbox" name="hasBeenRead" id="hasBeenRead">
+            <div class="logoContainer">
+                <img src="" alt="">
+                <h1>Library</h1>
 
-        <button class="formSubmitButton" type="submit">Add Book</button>
-    </form>
+                <h1>Library</h1>
+            </div>
 
 
+            <form action="" method="post" class="newBookForm">
+                <label for="title">Title of the book</label>
+                <input type="text" name="title" id="title">
+
+                <label for="author">Author of the book</label>
+                <input type="text" name="author" id="author">
+
+                <label for="numberOfPages">Nº Pages</label>
+                <input type="number" name="numberOfPages" id="numberOfPages">
+
+                <label for="hasBeenRead">Already read?</label>
+                <input type="checkbox" name="hasBeenRead" id="hasBeenRead">
+
+                <button class="formSubmitButton" type="submit">Add Book</button>
+
+                <button type="reset">Reset form</button>
+
+            </form>
 
 
+        </div>
 
+        <div class="right-side">
+            <div class="header">
+                <h1>My book library</h1>
+                <p>These books are currently in your library:</p>
+                <button class="deleteAllBooksButton">Delete books library</button>
+            </div>
 
+            <div class="libraryContainer">
 
+            </div>
+        </div>
+
+    </main>
 
 </body>
+
 </html>
