@@ -1,9 +1,12 @@
-import Book from "./bookClass.js";
+import { Book } from "./bookClass.js";
 import { createBookCard, createBookCardBookTitle, createBookCardBookAuthor, createBookCardBookNumberOfPages, createBookCardBookHasBeenRead, createBookCardToggleReadButton, createBookCardDeleteButton } from "./bookCardElements.js"; 
 
 
 
-// theHobbit.info(); // "The Hobbit by J.R.R. Tolkien, 295 pages, not hasBeenRead yet"
+
+
+
+
 let bookLibrary = [
   { title: `LOTR1`, author: `wilson`, numberOfPages: 15, hasBeenRead: true },
   { title: `Hobbit`, author: `JR Tokien`, numberOfPages: 28, hasBeenRead: false },
@@ -12,6 +15,10 @@ let bookLibrary = [
 ]; // TODO create a class for the book library array //! 
 // TODO use the constructor to create 4 random books and add them to the bookLibrary array
 
+new Book(`LOTR1`, `wilson`, 15, true);
+new Book(`Hobbit`, `JR Tokien`, 28, false);
+new Book(`Inception`, `Stanlien`, 155, true);
+new Book(`Interstellar`, `Christopher`, 92, false);
 
 
 const addBookToLibrary = (Book) => {
@@ -90,7 +97,6 @@ formSubmitButton.addEventListener(`click`, (e) => {
     e.target.form.author.value,
     e.target.form.numberOfPages.value,
     e.target.form.hasBeenRead.checked,
-    console.log(e.target.form.hasBeenRead.checked)
   );
   addBookToLibrary(book);
   // displayBookLibrary(bookLibrary);

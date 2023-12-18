@@ -8,4 +8,4 @@ class Book {
 
 }
 
-export default Book
+export { Book }
