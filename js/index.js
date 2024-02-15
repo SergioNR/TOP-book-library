@@ -1,5 +1,6 @@
 import { Book } from "./bookClass.js";
 import { createBookCard, createBookCardBookTitle, createBookCardBookAuthor, createBookCardBookNumberOfPages, createBookCardBookHasBeenRead, createBookCardToggleReadButton, createBookCardDeleteButton } from "./bookCardElements.js"; 
+import { clearBookLibrary } from "./clearBookLibrary.js";
 
 let bookLibrary = [
 ]; 
@@ -22,9 +23,7 @@ const addBookToLibrary = (Book) => {
   displayBookLibrary(bookLibrary);
 };
 
-const clearBookLibrary = () => {
-  libraryContainer.innerHTML = ``;
-};
+
 
 const libraryContainer = document.querySelector(`.libraryContainer`);
 
